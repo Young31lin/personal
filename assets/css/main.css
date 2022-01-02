@@ -586,7 +586,7 @@ input[type="radio"] + label:before {
 /* Box */
 
 .box {
-	border-radius: 50px;
+	border-radius: 4px;
 	border: solid 1px #ffffff;
 	margin-bottom: 2rem;
 	padding: 1.5em;
@@ -1260,13 +1260,13 @@ button {
 	}
 
 		#header > *:before {
-			content: '';
+			//content: '';
 			display: block;
-			position: absolute;
+			/*position: absolute;
 			top: calc(-3.5rem - 1px);
 			left: calc(50% - 1px);
 			width: 1px;
-			height: calc(3.5rem + 1px);
+			height: calc(3.5rem + 1px);*/
 			background: #ffffff;
 		}
 
@@ -1320,7 +1320,7 @@ button {
 			text-transform: uppercase;
 			letter-spacing: 0.2rem;
 			font-size: 0.8rem;
-			line-height: 2;
+			line-height: 5;
 		}
 
 	#header nav ul {
@@ -1646,4 +1646,30 @@ button {
 
 	body.is-preload #footer {
 		opacity: 0;
+	}
+
+input[type=text],
+select,
+textarea {
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #eeeeee;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 8px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+input[type=submit] {
+	background-color: #1d2126;
+	color: #ffffff;
+	padding: 1px 20px;
+	border: none;
+	border-radius: 7px;
+	cursor: pointer;
+}
+
+	input[type=submit]:hover {
+		background-color: #fcfcfc;
 	}
