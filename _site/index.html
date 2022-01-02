@@ -11,7 +11,7 @@
 	-->
 	<head>
 		<!-- This is the title of the page. It is the text that appears inside this pages tab in your web browser -->
-		<title>AstroSites</title>
+		<title>Young's Page</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!-- 	This links to this page's CSS, which is contained in the folder assets/css and the file main.css.
@@ -19,7 +19,7 @@
 			 If you have a new CSS file you'd like to add with custom styling, you should link to it here using:
 			 <link rel="stylesheet" href="assets/css/my-new-css-file.css"/> 
 		-->
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css" type="text/css"/>
 		<!-- 	In the case that the user's browser does not support JavaScript (unlikely, but possible), the page
 			will load a separate set of CSS stylings from the file assets/css/noscript.css
 			Any HTML contained inside <noscript></noscript> tags will be loaded in the event that JavaScript is not
@@ -58,7 +58,7 @@
 								<!-- Here is a paragraph where you can put a link to your CV -->
 								<p>
 									<!-- Note you will want to change where this points to! -->
-									<a href="images\resume.pdf" target="_blank">Curriculum Vitae</a>
+									<a href="images\Resume_New.pdf" target="_blank">View Full Resume</a>
 								</p>
 							</div>
 						</div>
@@ -69,107 +69,141 @@
 								<!-- This is a "List Item" -->
 								<li>
 									<!-- 	Note that this links to #about, which will move the page to wherever
-										the element with the id "about" exists.
-									-->
+			the element with the id "about" exists.
+		-->
 									<a href="#about">About Me</a>
 								</li>
 								<li>
-									<a href="#research">Research</a>
+									<a href="#work_experience">Work Experience</a>
 								</li>
 								<li>
-									<a href="#community">Community</a>
+									<a href="#project">Projects</a>
+								</li>
+								<li>
+									<a href="#skill">Skills</a>
 								</li>
 								<li>
 									<a href="#contact">Contact</a>
 								</li>
 								<!-- 	You can add another button to your navigation menu by adding
-									another List Item with a link inside of it.
-								-->
+		another List Item with a link inside of it.
+	-->
 								<!-- <li>
-									<a href="images/Astronomy.jpg">My CV</a>
-								</li> -->
+		<a href="images/Astronomy.jpg">My CV</a>
+	</li> -->
 							</ul>
 						</nav>
 					</header>
 
 					<!-- These are the "cards" that appear when you click the buttons on the main page -->
 					<div id="main">
-						<!-- 	Here is the "About Me" card. Note it has the id "about", which the previous 
-							button links to.
-						-->
+						<!-- 	Here is the "About Me" card. Note it has the id "about", which the previous
+		button links to.
+	-->
 						<article id="about">
 							<h2 class="major">About Me</h2>
 							<!-- Here is an image that you can customize for this page -->
 							<span class="image main">
-								<img src="images/pic01.jpg" alt=""/>
+								<img src="images/pic01.jpg" alt="" />
 							</span>
 							<!-- Here are three paragraphs where you can fill out information about yourself -->
 							<p>
-								<!-- Items contained in <b> tags are bolded! -->
-								<b>Education:</b>
+								<span>
+									Hi, I'm Young (He/Him), an undergraduate student pursuing a B.S. in Compouter Science and Financial
+									Engineering at Washington University in St. Louis. Since I can remember, I have always had an affinity for
+									solving complex-problems involving numbers. This drew me to exploring the field of computer programming, mathematics,
+									and finance. With my passion in these areas, I am interested in pursuing a career in quantitative trading and software
+									development.
+								</span>
 							</p>
 							<p>
-								<b>Research Interests:</b>
-							</p>
-							<p>
-								<b>Publications:</b> <a href="https://ui.adsabs.harvard.edu/">Include ADS link!</a>
+								<span>
+									Apart from my career and academic interests, I love video editing, photography, reading, traveling,
+									basketball, and the gym. Feel free to send me a message if you want to chat!
+								</span>
 							</p>
 						</article>
 
-						<!-- Here is the "Research" card. -->
-						<article id="research">
-							<h2 class="major">Research</h2>
+						<!-- Here is the "Work Experience" card. -->
+						<article id="work_experience">
+							<h2 class="major">Work Experience</h2>
 							<span class="image main">
-								<img src="images/pic02.jpg" alt=""/>
+								<img src="images/pic02.jpg" alt="" />
 							</span>
 							<p>
 								<!-- 	A <br> tag puts in a break so that the text that follows it displays on
-									the next line.
-								-->
-								<b>Project I Title</b><br>Project description, including further links to posters, talks, publications.
+		the next line.
+	-->
+								<b>Teaching Assistant (September 2021 - Present)</b><br>I am currently serving as the teaching assistant for the data structure and algorithm 
+								(CSE247) class at Washington University. My responsibilities include managing a lab with 50+ students, hosting weekly 
+								office hours, proctoring exams, and grading weekly assessments. During lab sessions, I would assist students by 
+								clarifying lab instructions and explaining lecture concepts. Additionally, I would offer students advice on how to 
+								debug their codes during office hours. This class covers challenging concepts like ordered collections, greedy/sorting
+								algorithms, and run-time complexity analysis.
 							</p>
 							<p>
-								<b>Project II Title</b><br>Project description, including further links to posters, talks, publications.
+								<b>Academic Tutor (September 2021 - December 2021)</b><br> I served as the tutor for Engineering Student Services at my school to help students that 
+								have no prior experience in coding. This includes introducing fundamental programming concepts like recursion, 
+								linear data structures, and object-oriented programming. Moreover, I also offered clear alternatives to assist students 
+								in debugging convoluted code. During exam weeks, I would assist students in reviewing by explaining core concepts and 
+								clarifying challenging questions in the mock exam.
+							</p>
+						</article>
+
+						<article id="project">
+							<h2 class="major">Projects</h2>
+							<span class="image main">
+								<img src="images/pic03.jpg" alt="" />
+							</span>
+							<p>
+								<b>File System Simulation (C++)</b><br>This project is a software simulation of a file system by implementing user interface 
+								similar to a command prompt. Through the implemnetation of eight unique commands, users are able to interact with 
+								the file system by accessing and modifying the files it contains. This program can be accessed through command
+								prompt (Windows) or terminal (iOS).
+								<br>Throughout the process, I utilized object-oriented design principles and patterns to eliminate redundant code 
+								and increase code flexibility. This was made possible by using interface inheritance, abstract factory 
+								design pattern, prototype pattern, composite pattern, command pattern, and more to create this file simulation. 
+
 							</p>
 						</article>
 
 						<!-- Here is the "Community" card. -->
-						<article id="community">
-							<h2 class="major">Community</h2>
+						<article id="skill">
+							<h2 class="major">Skills</h2>
 							<span class="image main">
-								<img src="images/pic03.jpg" alt=""/>
+								<img src="images/pic03.jpg" alt="" />
 							</span>
 							<p>
-								<b>Teaching:</b>
+								<b>Languages:</b> <span> English, Mandarin</span>
 							</p>
 							<p>
-								<b>Outreach:</b>
+								<b>Programming Langauges:</b> <span> Java, C++, Python, HTML/CSS</span>
 							</p>
 							<p>
-								<b>Equity & Inclusion:</b>
+								<b>Software:</b> <span> Eclipse, Microsoft Visual Studio, Git Bash, Microsoft Office Suite</span>
+							</p>
+							<p>
+								<b>Technical Skills:</b> <span> Objected-Oriented Programming, Web Development, Data Structure and Algorithms</span>
 							</p>
 						</article>
 
 						<!-- Here is a the "Contact" card. -->
 						<article id="contact">
 							<h2 class="major">Contact</h2>
-							<p> 
-								<b>Email:</b> 
-							</p>
-							<p> 
-								<b>Address:</b> 
+							<p>
+								<b>Email:</b><span> chih-yang.l@wustl.edu</span>
 							</p>
 
 							<!-- 	Here are the fancy icons that link to your social media.
-								These icons are rendered using Font Awesome fonts, and you can find more icons
-								here: https://fontawesome.com/icons
-							-->
+			These icons are rendered using Font Awesome fonts, and you can find more icons
+			here: https://fontawesome.com/icons
+		-->
 							<ul class="icons">
 								<!-- The Twitter icon -->
 								<li>
 									<!-- 	Note that you need to change the link to point to your page.
-										Replace "#" with your Twitter profile page.
-									-->
+					Replace "#" with your Twitter profile page.
+				-->
 									<a href="#" class="icon fa-twitter">
 										<span class="label">Twitter</span>
 									</a>
@@ -193,15 +227,15 @@
 									</a>
 								</li>
 								<!-- 	We can add a new icon by searching on the Font Awesome website
-									for the correct class name and inserting it as a new list item.
+				for the correct class name and inserting it as a new list item.
 
-									We found "envelope" here: https://fontawesome.com/icons/envelope
-								-->
+				We found "envelope" here: https://fontawesome.com/icons/envelope
+			-->
 								<!-- <li>
-									<a href="#" class="icon fa-envelope">
-										<span class="label">Email</span>
-									</a>
-								</li> -->
+				<a href="#" class="icon fa-envelope">
+					<span class="label">Email</span>
+				</a>
+			</li> -->
 							</ul>
 						</article>
 					</div>
@@ -211,7 +245,7 @@
 						<!-- 	You can change "Untitled" to your name to show everyone that
 							this is your work.
 						-->
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; Young Lin. Created with <a href="https://html5up.net">HTML5 UP</a> design.</p>
 					</footer>
 
 			</div>
