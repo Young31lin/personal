@@ -9,24 +9,33 @@
 		It contains information that isn't displayed on the actual page, but is useful
 		for the web browser when loading the page	
 	-->
-	<head>
-		<!-- This is the title of the page. It is the text that appears inside this pages tab in your web browser -->
-		<title>Young's Page</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!-- 	This links to this page's CSS, which is contained in the folder assets/css and the file main.css.
-			 If you want to edit the styling of this page, you should edit the file assets/css/main.css
-			 If you have a new CSS file you'd like to add with custom styling, you should link to it here using:
-			 <link rel="stylesheet" href="assets/css/my-new-css-file.css"/> 
+<head>
+	<!-- This is the title of the page. It is the text that appears inside this pages tab in your web browser -->
+	<title>Young's Page</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!-- 	This links to this page's CSS, which is contained in the folder assets/css and the file main.css.
+		 If you want to edit the styling of this page, you should edit the file assets/css/main.css
+		 If you have a new CSS file you'd like to add with custom styling, you should link to it here using:
+		 <link rel="stylesheet" href="assets/css/my-new-css-file.css"/>
+	-->
+	<link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+	<!-- 	In the case that the user's browser does not support JavaScript (unlikely, but possible), the page
+		will load a separate set of CSS stylings from the file assets/css/noscript.css
+		Any HTML contained inside <noscript></noscript> tags will be loaded in the event that JavaScript is not
+		available.
+	-->
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	<style type="text/css">
+		<!--
+        .tab {
+            text-indent: 40px;
+            margin-top: -20px;
+        }
 		-->
-		<link rel="stylesheet" href="assets/css/main.css" type="text/css"/>
-		<!-- 	In the case that the user's browser does not support JavaScript (unlikely, but possible), the page
-			will load a separate set of CSS stylings from the file assets/css/noscript.css
-			Any HTML contained inside <noscript></noscript> tags will be loaded in the event that JavaScript is not
-			available. 
-		-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
+	</style>
+</head>
 	<!-- The body is the location where your site's content will go -->
 	<body class="is-preload">
 
@@ -59,7 +68,7 @@
 								<!-- Here is a paragraph where you can put a link to your CV -->
 								<p>
 									<!-- Note you will want to change where this points to! -->
-									<a href="images\Resume_New.pdf" target="_blank">View Full Resume</a>
+									<a href="images\LinYoung2024.pdf" target="_blank">View Full Resume</a>
 								</p>
 							</div>
 						</div>
@@ -108,20 +117,16 @@
 								<img src="images/danforth.jpg" alt="" />
 							</span>
 							<!-- Here are three paragraphs where you can fill out information about yourself -->
-							<p>
-								<span>
+							<p class="tab">
 									Hi, I'm Young (He/Him), an undergraduate student pursuing a B.S. in Compouter Science and Financial
 									Engineering at Washington University in St. Louis. Since I can remember, I have always had an affinity for
 									solving complex-problems involving numbers. This drew me to exploring the field of computer programming, mathematics,
-									and finance. With my passion in these areas, I am interested in pursuing a career in quantitative trading and software
-									development.
-								</span>
+									and finance. With my passion in these areas, I am interested in pursuing a career that lies in the intersection
+									of finance and software development.						
 							</p>
-							<p>
-								<span>
+							<p class="tab">
 									Apart from my career and academic interests, I love video editing, photography, reading, traveling,
 									basketball, and the gym. Feel free to send me a message if you want to chat!
-								</span>
 							</p>
 						</article>
 
@@ -132,21 +137,30 @@
 								<img src="images/test.png" alt="" />
 							</span>
 							<p>
-								<!-- 	A <br> tag puts in a break so that the text that follows it displays on
-		the next line.
-	-->
-								<b>Teaching Assistant (September 2021 - Present)</b><br>I am currently serving as the teaching assistant for the data structure and algorithm 
-								(CSE247) class at Washington University. My responsibilities include managing a lab with 50+ students, hosting weekly 
-								office hours, proctoring exams, and grading weekly assessments. During lab sessions, I would assist students by 
-								clarifying lab instructions and explaining lecture concepts. Additionally, I would offer students advice on how to 
+								<b>Research Assistant (January 2022 - Present)</b>
+							</p>
+							<p class="tab">
+								I am currently a research assistant at the computer security and privacy laboratory at Washington University in St. Louis. Before the Summer of 2022, I was asked to conduct independent research by doing preliminary studies on the adversarial attacks of autonomous vehicles. This included reviewing literature on existing work and understanding the exposure sequence of mainstream HDR (high dynamic range) algorithms to identify possible vulnerabilities of the camera sensors in the vehicles. For the Summer of 2022, I was selected as 1 of the 17 participants in the Washington University Research for Undergraduate (REU) program in the CS department. I assisted in completing the set up of xvector-PLDA, yvector-PLDA, and GMM-PLDA speech recognition systems (SRS) by setting up the conda environment and adapting the original Python scripts to extract decision results and scores of the enrolled speakers. This included navigating dependency issues with the required packages and understanding the codebase. Since I was asked to set up the SRSs based on a repository that focused on launching adversarial attacks on the SRSs, I had to write a Python script that extracted the accuracy of the SRSs based on the decision/scores of the pretrained model.
+							</p>
+							<p>
+								<b>Teaching Assistant (September 2021 - Present)</b>
+							</p>
+							<p class="tab">
+								I am currently serving as the teaching assistant for the data structure and algorithm
+								(CSE247) class at Washington University. My responsibilities include managing a lab with 50+ students, hosting weekly
+								office hours, proctoring exams, and grading weekly assessments. During lab sessions, I would assist students by
+								clarifying lab instructions and explaining lecture concepts. Additionally, I would offer students advice on how to
 								debug their code during office hours. This class covers challenging concepts like ordered collections, greedy/sorting
 								algorithms, and run-time complexity analysis.
 							</p>
 							<p>
-								<b>Academic Tutor (September 2021 - December 2021)</b><br> I served as the tutor for Engineering Student Services at my school to help students that 
-								have no prior experience in coding. This includes introducing fundamental programming concepts like recursion, 
-								linear data structures, and object-oriented programming. Moreover, I also offered clear alternatives to assist students 
-								in debugging convoluted code. During exam weeks, I would assist students in reviewing by explaining core concepts and 
+								<b>Academic Tutor (September 2021 - December 2021)</b>
+							</p>
+							<p class="tab">
+								I served as the tutor for Engineering Student Services at my school to help students that
+								have no prior experience in coding. This includes introducing fundamental programming concepts like recursion,
+								linear data structures, and object-oriented programming. Moreover, I also offered clear alternatives to assist students
+								in debugging convoluted code. During exam weeks, I would assist students in reviewing by explaining core concepts and
 								clarifying challenging questions in the mock exam.
 							</p>
 						</article>
@@ -157,15 +171,47 @@
 								<img src="images/code2.png" alt="" />
 							</span>
 							<p>
-								<b>File System Simulation (C++)</b><br>This project is a software simulation of a file system by implementing user interface 
-								similar to a command prompt. Through the implemnetation of eight unique commands, users are able to interact with 
+								<b>E-Commerce Website (JavaScript, React, Django, PostgreSQL)</b>
+							</p>
+							<p class="tab">
+								I built a full-stack e-commerce website with React, Django, and PostgreSQL that includes ten separate features that allows users to browse and purchase products with ease. This includes a full-featured shopping cart that allows buyers to review their products before their purchase. They would also be able to submit reviews/ratings of the products, which is displayed in the product page. Additionally, I also created a search bar that would allow users to search for products. To help navigate the website, I also implemented product pagination and product carousels that would help sort the products by ratings. I also granted administrators the power to manage products, users, and orders.
+							</p>
+							<p class="tab">
+								For this project, I used React and React Bootstrap to build out the frontend. When I was building out the backend, I noticed the amount of repetitive code that I was writing. As a result, I ended up using Django because of its scalability, and also how clean it makes the code. I used PostgreSQL as the database to store user, product, review, order, order item, and shipping address information. Additionally, I also used the PayPal API to build out the checkout process.
+							</p>
+
+							<video width="960" height="720" controls src="assets/videos/CreatingRooms.mp4" type="sample/mp4" >
+							Your browser does not support the video tag.
+							</video>
+
+							<p>
+								<b>Multi-Room Chat Server (JavaScript, Node.js, Socket.IO)</b>
+							</p>
+							<p class="tab">
+								I developed a multi-room chat server that allowed users to create and join different chat rooms. The entire application is displayed on a single webpage. As a creator of the room, one can temporarily kick users out of the room, permanently ban users from joining that particular room, transfer ownership of the room, and disband the chat room completely. Additionally, users also have the option to create private rooms, which will require password authentication when others try joining them.
+							</p>
+							<p class="tab">
+								The server was built by leveraging Node.js as the runtime environment. This allows the server to handle heavy input-output operations because of its asynchronous nature. I also used Socket.IO to establish a WebSocket connection that enables real-time, bidirectional communication between the server and the client.
+							</p>
+							<span class="image main">
+								<img src="images/code2.png" alt="" />
+							</span>
+							<p>
+								<b>File System Simulation (C++)</b>
+							</p>
+							<p class="tab">
+								This project is a software simulation of a file system by implementing user interface
+								similar to a command prompt. Through the implemnetation of eight unique commands, users are able to interact with
 								the file system by accessing and modifying the files it contains. This program can be accessed through command
 								prompt (Windows) or terminal (iOS).
-								<br>Throughout the process, I utilized object-oriented design principles and patterns to eliminate redundant code 
-								and increase code flexibility. This was made possible by using interface inheritance, abstract factory 
-								design pattern, prototype pattern, composite pattern, command pattern, and more to create this file simulation. 
-
 							</p>
+							<p class="tab">
+								Throughout the process, I utilized object-oriented design principles and patterns to eliminate redundant code
+								and increase code flexibility. This was made possible by using interface inheritance, abstract factory
+								design pattern, prototype pattern, composite pattern, command pattern, and more to create this file simulation.
+							</p>
+
+
 						</article>
 
 						<!-- Here is the "Community" card. -->
@@ -175,16 +221,16 @@
 								<img src="images/cs.jpg" alt="" />
 							</span>
 							<p>
+								<b>Programming Langauges:</b> <span> Java, Python, C++, JavaScript, Bash, HTML, CSS, PHP, SQL</span>
+							</p>
+							<p>
+								<b>Libraries/Frameworks:</b> <span> React, Node.js, NumPy, Pandas, Sklearn, Django</span>
+							</p>
+							<p>
+								<b>Tools:</b> <span> Conda, Git, Socket.IO, Linux, MySQL, PostgreSQL</span>
+							</p>
+							<p>
 								<b>Languages:</b> <span> English, Mandarin</span>
-							</p>
-							<p>
-								<b>Programming Langauges:</b> <span> Java, C++, Python, HTML/CSS</span>
-							</p>
-							<p>
-								<b>Software:</b> <span> Eclipse, Microsoft Visual Studio, Git Bash, Microsoft Office Suite</span>
-							</p>
-							<p>
-								<b>Technical Skills:</b> <span> Objected-Oriented Programming, Web Development, Data Structure and Algorithms</span>
 							</p>
 						</article>
 
